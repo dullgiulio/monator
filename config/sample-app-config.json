@@ -1,0 +1,30 @@
+[
+    {
+        "name": "live.instance0+host0/myapp",
+        "url": "http://host0.local/url-of-app",
+        "headers": [ "Host: my-cool-app.com" ],
+        "contains": "app is up and running",
+        "timeout": "10s",
+        "warning": "2s",
+        "frequency": "1m"
+    },
+    {
+        "name": "live.instance0+host0/myapp",
+        "url": "http://host1.local/url-of-app",
+        "headers": [ "Host: my-cool-app.com" ],
+        "contains": "app is up and running",
+        "timeout": "10s",
+        "warning": "2s",
+        "frequency": "1m"
+    },
+    {
+        "name": "dev.instance0+devsrv0/myapp",
+        "url": "http://devsrv0.local/url-of-app",
+        "headers": [ "X-Context: DEV" ],
+        "contains": "app is up and running",
+        "timeout": "20s",
+        "warning": "5s",
+        "frequency": "10m"
+    }
+]
+
